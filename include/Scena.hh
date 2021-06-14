@@ -2,6 +2,9 @@
 #define SCENA_HH
 
 #include "dron.hh"
+#include "przeszkoda.hh"
+#include "Gora.hh"
+#include "memory"
 /**
  * @file Scena.hh
  * @brief Plik zawierający definicję klasy Scena
@@ -29,8 +32,8 @@ class Scena
      * 
      */
     static int _AktDron;
-
-
+    std::list<std::shared_ptr<przeszkoda>> ListaPrzeszkod;
+    int LicznikPrzeszkod = 0;
     /**
      * @brief Metoda pozwalająca na użycie aktywnego drona
      * 
@@ -47,7 +50,6 @@ class Scena
      */
     void WyswietlPolozenie();
 
-    
 public:
     /**
      * @brief Konstruktor Sceny
@@ -105,8 +107,17 @@ public:
      * @return true - Jeżeli operacja się powiedzie
      * @return false - Jeżeli nastąpi problem z otwarciem plików
      */
-    bool LotDrona(double &Kat,double &Dl,Wektor3D &DlXY, vector<Wektor3D>&sciezka);
-};
+    bool LotDrona(double &Kat, double &Dl, Wektor3D &DlXY, vector<Wektor3D> &sciezka);
+
+    void DodajGore(const Wektor3D &polozenie)
+    {
+        ListaPrzeszkod.emplace_back(Gora(LicznikPrzeszkod,polozenie));
+        ++LicznikPrzeszkod;
+        _Lacze.DodajNazwePliku(ListaPrzeszkod.back() -> WezNazwePrzeszkody().c_str());
+    }
+ 
+    
+}; 
 
 
 #endif

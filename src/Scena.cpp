@@ -55,6 +55,7 @@ void Scena::InicjalizujLacze()
     _Lacze.DodajNazwePliku("PlikFinalny_Dron2_Rotor3.dat");
     _Lacze.DodajNazwePliku("PlikFinalny_Dron2_Rotor4.dat");
     _Lacze.DodajNazwePliku(PLIK_PLASZCZYZNY);
+    DodajGore(Wektor3D{50,50,0});
     _Lacze.Rysuj();
 }
 

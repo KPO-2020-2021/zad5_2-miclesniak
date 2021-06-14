@@ -15,6 +15,7 @@
 #define NAZWA_ROTORA "_Rotor"
 #define NAZWA_KORPUSU "_Korpus.dat"
 #define ILOSC_WIERZ_LINII_TWORZACEJ 4
+#define SKALA_GORA 10, 10, 10
 #define SKALA_ROTORA 8, 8, 2
 #define SKALA_KORPUSU 10, 8, 4
 #define TRANSLACJA_KORPUS 0,0,2

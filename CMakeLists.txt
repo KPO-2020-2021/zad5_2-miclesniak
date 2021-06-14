@@ -43,6 +43,8 @@ set(SOURCES          # All .cpp files in src/
     src/dron
     src/Scena
     src/uklad
+    src/Gora
+    src/przeszkoda
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/main.cpp
