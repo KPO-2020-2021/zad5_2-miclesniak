@@ -47,9 +47,27 @@ protected:
           _NazwaPliku_BrylaWzorcowa(NazwaPlikuBrylaWzorcowa),
           _skala(Skala){};
 
+
+     BrylaGeometryczna(const std::string &NazwaPlikuBrylaWzorcowa,
+          const Wektor3D &Skala,
+          const Wektor3D &Polozenie,const std::string &NazwaPlikuBrylaFinalna)
+        : uklad(Polozenie),
+          _NazwaPliku_BrylaWzorcowa(NazwaPlikuBrylaWzorcowa),
+          _NazwaPliku_BrylaFinalna(NazwaPlikuBrylaFinalna),
+          _skala(Skala){};
                             
 
 public:
+    /**
+     * @brief Metoda zwracająca nazwę pliku zawierającego bryłę finalną
+     * 
+     * @return const std::string& - nazwa pliku zawierającego bryłę finalną
+     */
+    const std::string &WezNazwePliku_BrylaFinalna() const
+    {
+        return _NazwaPliku_BrylaFinalna;
+    };
+
     /**
      * @brief Metoda, która służy do skalowania wierzchołków bryły
      * 
@@ -74,15 +92,7 @@ public:
         return _NazwaPliku_BrylaWzorcowa;
     };
 
-    /**
-     * @brief Metoda zwracająca nazwę pliku zawierającego bryłę finalną
-     * 
-     * @return const std::string& - nazwa pliku zawierającego bryłę finalną
-     */
-    const std::string &WezNazwePliku_BrylaFinalna() const
-    {
-        return _NazwaPliku_BrylaFinalna;
-    };
+    
 
     /**
      * @brief Metoda ustalająca nazwę pliku zawierającego bryłę finalną

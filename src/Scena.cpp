@@ -55,7 +55,10 @@ void Scena::InicjalizujLacze()
     _Lacze.DodajNazwePliku("PlikFinalny_Dron2_Rotor3.dat");
     _Lacze.DodajNazwePliku("PlikFinalny_Dron2_Rotor4.dat");
     _Lacze.DodajNazwePliku(PLIK_PLASZCZYZNY);
-    DodajGore(Wektor3D{50,50,0});
+    DodajGoraZGrania(Wektor3D{100,90,0},Wektor3D{SKALA_GORA_GRAN});
+    DodajGoraOstr(Wektor3D{60,120,0}, Wektor3D{SKALA_GORA_OSTR1});
+    DodajGoraOstr(Wektor3D{100,20,0}, Wektor3D{SKALA_GORA_OSTR2});
+    DodajPlaskowyz(Wektor3D{150,105,0},Wektor3D{SKALA_PLASKOWYZU});
     _Lacze.Rysuj();
 }
 
@@ -95,3 +98,61 @@ void Scena::WybierzDrona()
     WyswietlAktPolozenie();
     Wektor3D::WyswietlIlosc();
 }
+
+void Scena::DodajPrzeszkode()
+{     
+        double SX,SY,SZ,WX,WY;
+        int przeszkoda;
+        Wektor3D Polozenie,Skala;
+        cout << "Wybierz rodzaj przeszkody:\n";
+        cout << "1 - Gora z ostrym szczytem\n";
+        cout << "2 - Gora z grania\n";
+        cout << "3 - Plaskowyz\n";
+      
+        cin>>przeszkoda;
+        switch (przeszkoda)
+      {
+      case 1:
+        cout << "Podaj skale wzdluz kolejnych osi 0X 0Y 0Z\n";
+        cout << "Podaj wspolrzedne środka podstawy x,y\n";
+        cin>>SX>>SY>>SZ;
+        Skala = Wektor3D{SX,SY,SZ};
+        cin >> WX >> WY;
+        Polozenie = Wektor3D{WX,WY,0};
+        DodajGoraOstr(Polozenie, Skala);
+        break;
+      case 2:
+       cout << "Podaj skale wzdluz kolejnych osi 0X 0Y 0Z\n";
+        cout << "Podaj wspolrzedne środka podstawy x,y\n";
+        cin>>SX>>SY>>SZ;
+        Skala = Wektor3D{SX,SY,SZ};
+        cin >> WX >> WY;
+        Polozenie = Wektor3D{WX,WY,0};
+        DodajGoraZGrania(Polozenie,Skala);
+        break;
+
+      case 3:
+        cout << "Podaj skale wzdluz kolejnych osi 0X 0Y 0Z\n";
+        cout << "Podaj wspolrzedne środka podstawy x,y\n";
+        cin>>SX>>SY>>SZ;
+        Skala = Wektor3D{SX,SY,SZ};
+        cin >> WX >> WY;
+        Polozenie = Wektor3D{WX,WY,0};
+        DodajPlaskowyz(Polozenie,Skala);
+        break;
+
+      default:
+        break;
+      }
+    }
+
+    // void Scena::WyswietlNazwy()
+    // {
+
+    // }
+
+     
+    // void UsunPrzeszkode()
+    // {
+
+    // }

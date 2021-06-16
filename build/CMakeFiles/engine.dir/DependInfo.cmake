@@ -4,10 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/michal/zad5_2-miclesniak/src/GoraOstr.cpp" "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/GoraOstr.cpp.o"
+  "/home/michal/zad5_2-miclesniak/src/GoraZGrania.cpp" "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/GoraZGrania.cpp.o"
   "/home/michal/zad5_2-miclesniak/src/Scena.cpp" "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/Scena.cpp.o"
   "/home/michal/zad5_2-miclesniak/src/dron.cpp" "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/dron.cpp.o"
   "/home/michal/zad5_2-miclesniak/src/example.cpp" "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/example.cpp.o"
   "/home/michal/zad5_2-miclesniak/src/lacze_do_gnuplota.cpp" "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o"
+  "/home/michal/zad5_2-miclesniak/src/plaskowyz.cpp" "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/plaskowyz.cpp.o"
+  "/home/michal/zad5_2-miclesniak/src/przeszkoda.cpp" "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/przeszkoda.cpp.o"
   "/home/michal/zad5_2-miclesniak/src/uklad.cpp" "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/uklad.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

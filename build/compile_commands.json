@@ -26,6 +26,26 @@
 },
 {
   "directory": "/home/michal/zad5_2-miclesniak/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/michal/zad5_2-miclesniak/build -I/home/michal/zad5_2-miclesniak/include -I/home/michal/zad5_2-miclesniak/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/GoraZGrania.cpp.o -c /home/michal/zad5_2-miclesniak/src/GoraZGrania.cpp",
+  "file": "/home/michal/zad5_2-miclesniak/src/GoraZGrania.cpp"
+},
+{
+  "directory": "/home/michal/zad5_2-miclesniak/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/michal/zad5_2-miclesniak/build -I/home/michal/zad5_2-miclesniak/include -I/home/michal/zad5_2-miclesniak/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/GoraOstr.cpp.o -c /home/michal/zad5_2-miclesniak/src/GoraOstr.cpp",
+  "file": "/home/michal/zad5_2-miclesniak/src/GoraOstr.cpp"
+},
+{
+  "directory": "/home/michal/zad5_2-miclesniak/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/michal/zad5_2-miclesniak/build -I/home/michal/zad5_2-miclesniak/include -I/home/michal/zad5_2-miclesniak/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/plaskowyz.cpp.o -c /home/michal/zad5_2-miclesniak/src/plaskowyz.cpp",
+  "file": "/home/michal/zad5_2-miclesniak/src/plaskowyz.cpp"
+},
+{
+  "directory": "/home/michal/zad5_2-miclesniak/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/michal/zad5_2-miclesniak/build -I/home/michal/zad5_2-miclesniak/include -I/home/michal/zad5_2-miclesniak/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/przeszkoda.cpp.o -c /home/michal/zad5_2-miclesniak/src/przeszkoda.cpp",
+  "file": "/home/michal/zad5_2-miclesniak/src/przeszkoda.cpp"
+},
+{
+  "directory": "/home/michal/zad5_2-miclesniak/build",
   "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/michal/zad5_2-miclesniak/build -I/home/michal/zad5_2-miclesniak/include -I/home/michal/zad5_2-miclesniak/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/main.dir/app/main.cpp.o -c /home/michal/zad5_2-miclesniak/app/main.cpp",
   "file": "/home/michal/zad5_2-miclesniak/app/main.cpp"
 },

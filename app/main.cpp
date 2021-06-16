@@ -28,8 +28,8 @@ using namespace std;
  */
 int main()
 {
-  vector<Wektor3D>sciezka; 
-  double Kat,Dl;
+  vector<Wektor3D> sciezka;
+  double Kat, Dl;
   Wektor3D DlXY;
   char wyb;
   Wektor3D Wek1{POZYCJA_STARTOWA_1};
@@ -41,14 +41,20 @@ int main()
 
   Sc.WyswietlAktPolozenie();
   cout << endl
+       << "======= Witaj w aplikacji Dragonfly ======" << endl
+       << endl;
+  cout << endl
        << "a - wybierz aktywnego drona\n";
   cout << "p - zadaj parametry przelotu\n";
   cout << "m - wyswietl menu\n";
+  cout << "d - dodaj element powierzchni\n";
+  cout << "u - usun element powierzchni\n";
   cout << "\nk - koniec dzialania programu\n";
+  
 
   while (wyb != 'k')
   {
-    cout<<"\nTwoj wybor: ";
+    cout << "\nTwoj wybor: ";
     cin >> wyb;
 
     switch (wyb)
@@ -58,7 +64,7 @@ int main()
       break;
 
     case 'p':
-      if (!Sc.LotDrona(Kat,Dl,DlXY,sciezka))
+      if (!Sc.LotDrona(Kat, Dl, DlXY, sciezka))
         cerr << "Blad, Lot nie zostal wykonany!\n";
       Sc.WyswietlAktPolozenie();
       cout << endl;
@@ -71,9 +77,18 @@ int main()
            << "a - wybierz aktywnego drona\n";
       cout << "p - zadaj parametry przelotu\n";
       cout << "m - wyswietl menu\n";
+      cout << "d - dodaj element powierzchni\n";
+      cout << "u - usun element powierzchni\n";
       cout << "\nk - koniec dzialania programu\n";
       break;
 
+    case 'd':
+      Sc.DodajPrzeszkode();
+      break;
+
+    case 'u':
+      
+      break;
     case 'k':
       cout << "\nKoniec dzialania programu Dragonfly\n";
       break;
@@ -85,3 +100,5 @@ int main()
   }
   return 0;
 }
+
+

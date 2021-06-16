@@ -1,0 +1,28 @@
+#ifndef PLASKOWYZ_HH
+#define PLASKOWYZ_HH
+
+#include "BrylaGeometryczna.hh"
+#include "przeszkoda.hh"
+#include "prostopadloscian.hh"
+
+class Plaskowyz : public przeszkoda
+{
+    prostopadloscian _Plaskowyz;
+
+    protected:
+    virtual bool TransformujBryle(std::ifstream &Plik_We,
+                          std::ofstream &Plik_Wy, const BrylaGeometryczna *Br) const override final;
+
+    public:
+     Plaskowyz(const int NumerPrzeszkody,
+          const Wektor3D &Polozenie, const Wektor3D &Skala)
+        :przeszkoda("Plaskowyz",NumerPrzeszkody),_Plaskowyz(Skala,Polozenie+Wektor3D{0,0,Wektor3D{SKALA_PLASKOWYZU}[2]/2},StworzNazwePlikuPrzeszkody()){};
+
+    bool ObliczIZapiszWsplGlobalnePrzeszkody() const override final;
+    virtual std::string WezNazwePlikuFinal() const override final
+    {
+        return _Plaskowyz.WezNazwePliku_BrylaFinalna();
+    }
+};
+
+#endif

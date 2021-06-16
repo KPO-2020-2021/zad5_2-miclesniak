@@ -3,7 +3,9 @@
 
 #include "dron.hh"
 #include "przeszkoda.hh"
-#include "Gora.hh"
+#include "GoraZGrania.hh"
+#include "GoraOstr.hh"
+#include "plaskowyz.hh"
 #include "memory"
 /**
  * @file Scena.hh
@@ -109,11 +111,44 @@ public:
      */
     bool LotDrona(double &Kat, double &Dl, Wektor3D &DlXY, vector<Wektor3D> &sciezka);
 
-    void DodajGore(const Wektor3D &polozenie)
+    void DodajGoraZGrania(const Wektor3D &polozenie, const Wektor3D &Skala)
     {
-        ListaPrzeszkod.emplace_back(Gora(LicznikPrzeszkod,polozenie));
+        ListaPrzeszkod.emplace_back(new GoraZGrania(LicznikPrzeszkod,polozenie,Skala));
         ++LicznikPrzeszkod;
-        _Lacze.DodajNazwePliku(ListaPrzeszkod.back() -> WezNazwePrzeszkody().c_str());
+        ListaPrzeszkod.back() -> ObliczIZapiszWsplGlobalnePrzeszkody();
+        _Lacze.DodajNazwePliku(ListaPrzeszkod.back() -> WezNazwePlikuFinal().c_str());
+        _Lacze.Rysuj();
+        
+    }
+
+    void DodajGoraOstr(const Wektor3D &polozenie, const Wektor3D &Skala)
+    {
+        ListaPrzeszkod.emplace_back(new GoraOstr(LicznikPrzeszkod,Skala,polozenie));
+        ++LicznikPrzeszkod;
+        ListaPrzeszkod.back() -> ObliczIZapiszWsplGlobalnePrzeszkody();
+        _Lacze.DodajNazwePliku(ListaPrzeszkod.back() -> WezNazwePlikuFinal().c_str());
+        _Lacze.Rysuj();
+    }
+
+    void DodajPlaskowyz(const Wektor3D &polozenie, const Wektor3D &Skala)
+    {
+        ListaPrzeszkod.emplace_back(new Plaskowyz(LicznikPrzeszkod,polozenie, Skala));
+        ++LicznikPrzeszkod;
+        ListaPrzeszkod.back() -> ObliczIZapiszWsplGlobalnePrzeszkody();
+        _Lacze.DodajNazwePliku(ListaPrzeszkod.back() -> WezNazwePlikuFinal().c_str());
+        _Lacze.Rysuj();
+        
+    }
+
+    void DodajPrzeszkode();
+    // void WyswietlNazwy();
+    // void UsunPrzeszkode();
+
+
+     void WyswietlNazwe()
+    {
+        for (const std::shared_ptr<przeszkoda> &i : ListaPrzeszkod)
+        i->WezNazwePrzeszkody();    
     }
  
     

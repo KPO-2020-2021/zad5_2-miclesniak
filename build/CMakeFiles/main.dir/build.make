@@ -80,7 +80,11 @@ main_EXTERNAL_OBJECTS = \
 "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o" \
 "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/dron.cpp.o" \
 "/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/Scena.cpp.o" \
-"/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/uklad.cpp.o"
+"/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/uklad.cpp.o" \
+"/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/GoraZGrania.cpp.o" \
+"/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/GoraOstr.cpp.o" \
+"/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/plaskowyz.cpp.o" \
+"/home/michal/zad5_2-miclesniak/build/CMakeFiles/engine.dir/src/przeszkoda.cpp.o"
 
 main: CMakeFiles/main.dir/app/main.cpp.o
 main: CMakeFiles/engine.dir/src/example.cpp.o
@@ -88,6 +92,10 @@ main: CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o
 main: CMakeFiles/engine.dir/src/dron.cpp.o
 main: CMakeFiles/engine.dir/src/Scena.cpp.o
 main: CMakeFiles/engine.dir/src/uklad.cpp.o
+main: CMakeFiles/engine.dir/src/GoraZGrania.cpp.o
+main: CMakeFiles/engine.dir/src/GoraOstr.cpp.o
+main: CMakeFiles/engine.dir/src/plaskowyz.cpp.o
+main: CMakeFiles/engine.dir/src/przeszkoda.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/michal/zad5_2-miclesniak/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main"

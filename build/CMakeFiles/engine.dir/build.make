@@ -122,11 +122,67 @@ CMakeFiles/engine.dir/src/uklad.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/uklad.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/zad5_2-miclesniak/src/uklad.cpp -o CMakeFiles/engine.dir/src/uklad.cpp.s
 
+CMakeFiles/engine.dir/src/GoraZGrania.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/GoraZGrania.cpp.o: ../src/GoraZGrania.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/zad5_2-miclesniak/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine.dir/src/GoraZGrania.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/GoraZGrania.cpp.o -c /home/michal/zad5_2-miclesniak/src/GoraZGrania.cpp
+
+CMakeFiles/engine.dir/src/GoraZGrania.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/GoraZGrania.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/zad5_2-miclesniak/src/GoraZGrania.cpp > CMakeFiles/engine.dir/src/GoraZGrania.cpp.i
+
+CMakeFiles/engine.dir/src/GoraZGrania.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/GoraZGrania.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/zad5_2-miclesniak/src/GoraZGrania.cpp -o CMakeFiles/engine.dir/src/GoraZGrania.cpp.s
+
+CMakeFiles/engine.dir/src/GoraOstr.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/GoraOstr.cpp.o: ../src/GoraOstr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/zad5_2-miclesniak/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/engine.dir/src/GoraOstr.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/GoraOstr.cpp.o -c /home/michal/zad5_2-miclesniak/src/GoraOstr.cpp
+
+CMakeFiles/engine.dir/src/GoraOstr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/GoraOstr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/zad5_2-miclesniak/src/GoraOstr.cpp > CMakeFiles/engine.dir/src/GoraOstr.cpp.i
+
+CMakeFiles/engine.dir/src/GoraOstr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/GoraOstr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/zad5_2-miclesniak/src/GoraOstr.cpp -o CMakeFiles/engine.dir/src/GoraOstr.cpp.s
+
+CMakeFiles/engine.dir/src/plaskowyz.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/plaskowyz.cpp.o: ../src/plaskowyz.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/zad5_2-miclesniak/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/engine.dir/src/plaskowyz.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/plaskowyz.cpp.o -c /home/michal/zad5_2-miclesniak/src/plaskowyz.cpp
+
+CMakeFiles/engine.dir/src/plaskowyz.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/plaskowyz.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/zad5_2-miclesniak/src/plaskowyz.cpp > CMakeFiles/engine.dir/src/plaskowyz.cpp.i
+
+CMakeFiles/engine.dir/src/plaskowyz.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/plaskowyz.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/zad5_2-miclesniak/src/plaskowyz.cpp -o CMakeFiles/engine.dir/src/plaskowyz.cpp.s
+
+CMakeFiles/engine.dir/src/przeszkoda.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/przeszkoda.cpp.o: ../src/przeszkoda.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/michal/zad5_2-miclesniak/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/engine.dir/src/przeszkoda.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/przeszkoda.cpp.o -c /home/michal/zad5_2-miclesniak/src/przeszkoda.cpp
+
+CMakeFiles/engine.dir/src/przeszkoda.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/przeszkoda.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/michal/zad5_2-miclesniak/src/przeszkoda.cpp > CMakeFiles/engine.dir/src/przeszkoda.cpp.i
+
+CMakeFiles/engine.dir/src/przeszkoda.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/przeszkoda.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/michal/zad5_2-miclesniak/src/przeszkoda.cpp -o CMakeFiles/engine.dir/src/przeszkoda.cpp.s
+
 engine: CMakeFiles/engine.dir/src/example.cpp.o
 engine: CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o
 engine: CMakeFiles/engine.dir/src/dron.cpp.o
 engine: CMakeFiles/engine.dir/src/Scena.cpp.o
 engine: CMakeFiles/engine.dir/src/uklad.cpp.o
+engine: CMakeFiles/engine.dir/src/GoraZGrania.cpp.o
+engine: CMakeFiles/engine.dir/src/GoraOstr.cpp.o
+engine: CMakeFiles/engine.dir/src/plaskowyz.cpp.o
+engine: CMakeFiles/engine.dir/src/przeszkoda.cpp.o
 engine: CMakeFiles/engine.dir/build.make
 
 .PHONY : engine

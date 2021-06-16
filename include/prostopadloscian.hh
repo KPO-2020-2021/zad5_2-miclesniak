@@ -7,12 +7,9 @@ class prostopadloscian: public BrylaGeometryczna
 {
     public:
     prostopadloscian(const Wektor3D &skala,const Wektor3D &polozenie): BrylaGeometryczna(PLIKWZ_SZESCIAN,skala,polozenie){};
+
+    prostopadloscian(const Wektor3D &skala,const Wektor3D &polozenie,const std::string& NazwaPlikuWynik): BrylaGeometryczna(PLIKWZ_SZESCIAN,skala,polozenie,NazwaPlikuWynik){};
 };
 
-class prostopadloscian: public BrylaGeometryczna
-{
-    public:
-    prostopadloscian(const Wektor3D &skala,const Wektor3D &polozenie,const std::string& NazwaPlikuWynik): BrylaGeometryczna(PLIKWZ_SZESCIAN,skala,polozenie){};
-};
 
 #endif

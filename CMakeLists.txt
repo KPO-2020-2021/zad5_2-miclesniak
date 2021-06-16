@@ -43,7 +43,9 @@ set(SOURCES          # All .cpp files in src/
     src/dron
     src/Scena
     src/uklad
-    src/Gora
+    src/GoraZGrania
+    src/GoraOstr
+    src/plaskowyz
     src/przeszkoda
 )
 set(TESTFILES        # All .cpp files in tests/

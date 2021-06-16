@@ -10,6 +10,22 @@
 uklad.hh
 ../include/uklad.hh
 
+../include/GoraOstr.hh
+BrylaGeometryczna.hh
+../include/BrylaGeometryczna.hh
+przeszkoda.hh
+../include/przeszkoda.hh
+prostopadloscian.hh
+../include/prostopadloscian.hh
+
+../include/GoraZGrania.hh
+BrylaGeometryczna.hh
+../include/BrylaGeometryczna.hh
+przeszkoda.hh
+../include/przeszkoda.hh
+prostopadloscian.hh
+../include/prostopadloscian.hh
+
 ../include/Graniastoslup6.hh
 BrylaGeometryczna.hh
 ../include/BrylaGeometryczna.hh
@@ -39,6 +55,16 @@ Macierz.hh
 ../include/Scena.hh
 dron.hh
 ../include/dron.hh
+przeszkoda.hh
+../include/przeszkoda.hh
+GoraZGrania.hh
+../include/GoraZGrania.hh
+GoraOstr.hh
+../include/GoraOstr.hh
+plaskowyz.hh
+../include/plaskowyz.hh
+memory
+../include/memory
 
 ../include/Wektor.hh
 iostream
@@ -74,9 +100,25 @@ list
 vector
 -
 
+../include/plaskowyz.hh
+BrylaGeometryczna.hh
+../include/BrylaGeometryczna.hh
+przeszkoda.hh
+../include/przeszkoda.hh
+prostopadloscian.hh
+../include/prostopadloscian.hh
+
 ../include/prostopadloscian.hh
 BrylaGeometryczna.hh
 ../include/BrylaGeometryczna.hh
+
+../include/przeszkoda.hh
+Wektor3D.hh
+../include/Wektor3D.hh
+BrylaGeometryczna.hh
+../include/BrylaGeometryczna.hh
+string
+-
 
 ../include/uklad.hh
 iostream

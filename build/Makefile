@@ -577,6 +577,60 @@ app/main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/app/main.cpp.s
 .PHONY : app/main.cpp.s
 
+src/GoraOstr.o: src/GoraOstr.cpp.o
+
+.PHONY : src/GoraOstr.o
+
+# target to build an object file
+src/GoraOstr.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/GoraOstr.cpp.o
+.PHONY : src/GoraOstr.cpp.o
+
+src/GoraOstr.i: src/GoraOstr.cpp.i
+
+.PHONY : src/GoraOstr.i
+
+# target to preprocess a source file
+src/GoraOstr.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/GoraOstr.cpp.i
+.PHONY : src/GoraOstr.cpp.i
+
+src/GoraOstr.s: src/GoraOstr.cpp.s
+
+.PHONY : src/GoraOstr.s
+
+# target to generate assembly for a file
+src/GoraOstr.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/GoraOstr.cpp.s
+.PHONY : src/GoraOstr.cpp.s
+
+src/GoraZGrania.o: src/GoraZGrania.cpp.o
+
+.PHONY : src/GoraZGrania.o
+
+# target to build an object file
+src/GoraZGrania.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/GoraZGrania.cpp.o
+.PHONY : src/GoraZGrania.cpp.o
+
+src/GoraZGrania.i: src/GoraZGrania.cpp.i
+
+.PHONY : src/GoraZGrania.i
+
+# target to preprocess a source file
+src/GoraZGrania.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/GoraZGrania.cpp.i
+.PHONY : src/GoraZGrania.cpp.i
+
+src/GoraZGrania.s: src/GoraZGrania.cpp.s
+
+.PHONY : src/GoraZGrania.s
+
+# target to generate assembly for a file
+src/GoraZGrania.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/GoraZGrania.cpp.s
+.PHONY : src/GoraZGrania.cpp.s
+
 src/Scena.o: src/Scena.cpp.o
 
 .PHONY : src/Scena.o
@@ -685,6 +739,60 @@ src/lacze_do_gnuplota.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.s
 .PHONY : src/lacze_do_gnuplota.cpp.s
 
+src/plaskowyz.o: src/plaskowyz.cpp.o
+
+.PHONY : src/plaskowyz.o
+
+# target to build an object file
+src/plaskowyz.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/plaskowyz.cpp.o
+.PHONY : src/plaskowyz.cpp.o
+
+src/plaskowyz.i: src/plaskowyz.cpp.i
+
+.PHONY : src/plaskowyz.i
+
+# target to preprocess a source file
+src/plaskowyz.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/plaskowyz.cpp.i
+.PHONY : src/plaskowyz.cpp.i
+
+src/plaskowyz.s: src/plaskowyz.cpp.s
+
+.PHONY : src/plaskowyz.s
+
+# target to generate assembly for a file
+src/plaskowyz.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/plaskowyz.cpp.s
+.PHONY : src/plaskowyz.cpp.s
+
+src/przeszkoda.o: src/przeszkoda.cpp.o
+
+.PHONY : src/przeszkoda.o
+
+# target to build an object file
+src/przeszkoda.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/przeszkoda.cpp.o
+.PHONY : src/przeszkoda.cpp.o
+
+src/przeszkoda.i: src/przeszkoda.cpp.i
+
+.PHONY : src/przeszkoda.i
+
+# target to preprocess a source file
+src/przeszkoda.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/przeszkoda.cpp.i
+.PHONY : src/przeszkoda.cpp.i
+
+src/przeszkoda.s: src/przeszkoda.cpp.s
+
+.PHONY : src/przeszkoda.s
+
+# target to generate assembly for a file
+src/przeszkoda.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/przeszkoda.cpp.s
+.PHONY : src/przeszkoda.cpp.s
+
 src/uklad.o: src/uklad.cpp.o
 
 .PHONY : src/uklad.o
@@ -757,6 +865,12 @@ help:
 	@echo "... app/main.o"
 	@echo "... app/main.i"
 	@echo "... app/main.s"
+	@echo "... src/GoraOstr.o"
+	@echo "... src/GoraOstr.i"
+	@echo "... src/GoraOstr.s"
+	@echo "... src/GoraZGrania.o"
+	@echo "... src/GoraZGrania.i"
+	@echo "... src/GoraZGrania.s"
 	@echo "... src/Scena.o"
 	@echo "... src/Scena.i"
 	@echo "... src/Scena.s"
@@ -769,6 +883,12 @@ help:
 	@echo "... src/lacze_do_gnuplota.o"
 	@echo "... src/lacze_do_gnuplota.i"
 	@echo "... src/lacze_do_gnuplota.s"
+	@echo "... src/plaskowyz.o"
+	@echo "... src/plaskowyz.i"
+	@echo "... src/plaskowyz.s"
+	@echo "... src/przeszkoda.o"
+	@echo "... src/przeszkoda.i"
+	@echo "... src/przeszkoda.s"
 	@echo "... src/uklad.o"
 	@echo "... src/uklad.i"
 	@echo "... src/uklad.s"
