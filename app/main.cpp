@@ -87,7 +87,7 @@ int main()
       break;
 
     case 'u':
-      
+      Sc.UsunPrzeszkode();
       break;
     case 'k':
       cout << "\nKoniec dzialania programu Dragonfly\n";

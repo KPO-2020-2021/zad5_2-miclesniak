@@ -16,12 +16,19 @@ class Plaskowyz : public przeszkoda
     public:
      Plaskowyz(const int NumerPrzeszkody,
           const Wektor3D &Polozenie, const Wektor3D &Skala)
-        :przeszkoda("Plaskowyz",NumerPrzeszkody),_Plaskowyz(Skala,Polozenie+Wektor3D{0,0,Wektor3D{SKALA_PLASKOWYZU}[2]/2},StworzNazwePlikuPrzeszkody()){};
+        :przeszkoda("Plaskowyz",NumerPrzeszkody),_Plaskowyz(Skala,Polozenie+Wektor3D{0,0,Skala[2]/2},StworzNazwePlikuPrzeszkody()){};
 
     bool ObliczIZapiszWsplGlobalnePrzeszkody() const override final;
     virtual std::string WezNazwePlikuFinal() const override final
     {
         return _Plaskowyz.WezNazwePliku_BrylaFinalna();
+    }
+
+    void Wyswietl() override final
+    {
+        std::cout <<"Plaskowyz"<<"(";
+        _Plaskowyz.WyswietlWsp();
+        std::cout << ")";
     }
 };
 

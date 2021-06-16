@@ -53,7 +53,7 @@ public:
         _Polozenie = pol;
     }
 
-    uklad(const Wektor3D &Polozenie) : _Polozenie(Polozenie){}
+    uklad(const Wektor3D &Polozenie) : _Polozenie(Polozenie), _Kat(0){}
 
     void Przesun(const Wektor3D wsp, const double CalkDlugosc);
     void Wznies(const double wysokosc){_Polozenie[2] = wysokosc;}

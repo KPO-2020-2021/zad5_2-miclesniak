@@ -141,16 +141,8 @@ public:
     }
 
     void DodajPrzeszkode();
-    // void WyswietlNazwy();
-    // void UsunPrzeszkode();
+    void UsunPrzeszkode();
 
-
-     void WyswietlNazwe()
-    {
-        for (const std::shared_ptr<przeszkoda> &i : ListaPrzeszkod)
-        i->WezNazwePrzeszkody();    
-    }
- 
     
 }; 
 

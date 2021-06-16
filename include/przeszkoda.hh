@@ -18,6 +18,7 @@ public:
     std::string StworzNazwePlikuPrzeszkody() const;
     virtual bool ObliczIZapiszWsplGlobalnePrzeszkody() const = 0;
     virtual std::string WezNazwePlikuFinal() const = 0;
+    virtual void Wyswietl() = 0; 
     std::string WezNazwePrzeszkody() const
     {
         return _NazwaPrzeszkody;

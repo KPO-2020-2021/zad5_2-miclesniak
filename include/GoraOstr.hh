@@ -16,12 +16,19 @@ class GoraOstr : public przeszkoda
     public:
      GoraOstr(const int NumerPrzeszkody,const Wektor3D &Skala,
           const Wektor3D &Polozenie)
-        :przeszkoda("GoraOstr",NumerPrzeszkody),_BrylaGoraOstr(Skala, Polozenie+Wektor3D{0,0,Wektor3D{Skala}[2]/2}, StworzNazwePlikuPrzeszkody()){};
+        :przeszkoda("GoraOstr",NumerPrzeszkody),_BrylaGoraOstr(Skala, Polozenie+Wektor3D{0,0,Skala[2]/2}, StworzNazwePlikuPrzeszkody()){};
 
     bool ObliczIZapiszWsplGlobalnePrzeszkody() const override final;
     virtual std::string WezNazwePlikuFinal() const override final
     {
         return _BrylaGoraOstr.WezNazwePliku_BrylaFinalna();
+    }
+
+    void Wyswietl() override final
+    {
+        std::cout <<"Gora z ostrym szczytem"<< "(";
+        _BrylaGoraOstr.WyswietlWsp();
+        std::cout << ")";
     }
 };
 
