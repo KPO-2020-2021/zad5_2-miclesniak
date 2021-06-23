@@ -111,6 +111,12 @@ public:
      */
     bool LotDrona(double &Kat, double &Dl, Wektor3D &DlXY, vector<Wektor3D> &sciezka);
 
+    /**
+     * @brief Metoda dodajaca przeszkoda Gore z grania
+     * 
+     * @param polozenie - polozenie,gdzie ma sie znajdowac Przeszkoda
+     * @param Skala - Skala Gory z Grania
+     */
     void DodajGoraZGrania(const Wektor3D &polozenie, const Wektor3D &Skala)
     {
         ListaPrzeszkod.emplace_back(new GoraZGrania(LicznikPrzeszkod,polozenie,Skala));
@@ -121,6 +127,12 @@ public:
         
     }
 
+    /**
+     * @brief Metoda dodajaca przeszkoda Gora Ostra
+     * 
+     * @param polozenie - polozenie,gdzie ma sie znajdowac Przeszkoda
+     * @param Skala - Skala Ostrej Gory
+     */
     void DodajGoraOstr(const Wektor3D &polozenie, const Wektor3D &Skala)
     {
         ListaPrzeszkod.emplace_back(new GoraOstr(LicznikPrzeszkod,Skala,polozenie));
@@ -129,7 +141,12 @@ public:
         _Lacze.DodajNazwePliku(ListaPrzeszkod.back() -> WezNazwePlikuFinal().c_str());
         _Lacze.Rysuj();
     }
-
+    /**
+     * @brief Metoda dodajaca przeszkode Plaskowyz
+     * 
+     * @param polozenie - polozenie,gdzie ma sie znajdowac Przeszkoda
+     * @param Skala - Skala Plaskowyzu
+     */
     void DodajPlaskowyz(const Wektor3D &polozenie, const Wektor3D &Skala)
     {
         ListaPrzeszkod.emplace_back(new Plaskowyz(LicznikPrzeszkod,polozenie, Skala));
@@ -139,8 +156,15 @@ public:
         _Lacze.Rysuj();
         
     }
-
+/**
+ * @brief Metoda realizujaca dodanie wybanej przeszkody
+ * 
+ */
     void DodajPrzeszkode();
+    /**
+     * @brief metoda realizujaca usuniecie danej przeszkody
+     * 
+     */
     void UsunPrzeszkode();
 
     

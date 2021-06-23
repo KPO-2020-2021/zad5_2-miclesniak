@@ -4,6 +4,11 @@
 #include "BrylaGeometryczna.hh"
 #include "przeszkoda.hh"
 #include "prostopadloscian.hh"
+/**
+ * @file GoraZGrania.hh
+ * @brief Plik zawiera definicję klasy GoraZGrania dziedziczacej po klasie przeszkoda
+ * 
+ */
 
 class GoraZGrania : public przeszkoda
 {

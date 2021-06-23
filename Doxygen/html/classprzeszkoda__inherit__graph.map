@@ -1,0 +1,6 @@
+<map id="przeszkoda" name="przeszkoda">
+<area shape="rect" id="node1" title=" " alt="" coords="115,5,210,32"/>
+<area shape="rect" id="node2" href="$class_gora_ostr.html" title=" " alt="" coords="5,80,85,107"/>
+<area shape="rect" id="node3" href="$class_gora_z_grania.html" title=" " alt="" coords="110,80,215,107"/>
+<area shape="rect" id="node4" href="$class_plaskowyz.html" title=" " alt="" coords="240,80,331,107"/>
+</map>

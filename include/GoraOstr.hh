@@ -5,6 +5,12 @@
 #include "przeszkoda.hh"
 #include "prostopadloscian.hh"
 
+/**
+ * @file GoraOstr.hh
+ * @brief Plik zawiera definicję klasy GoraOstr dziedziczacej po klasie przeszkoda
+ * 
+ */
+
 class GoraOstr : public przeszkoda
 {
     prostopadloscian _BrylaGoraOstr;
@@ -19,6 +25,7 @@ class GoraOstr : public przeszkoda
         :przeszkoda("GoraOstr",NumerPrzeszkody),_BrylaGoraOstr(Skala, Polozenie+Wektor3D{0,0,Skala[2]/2}, StworzNazwePlikuPrzeszkody()){};
 
     bool ObliczIZapiszWsplGlobalnePrzeszkody() const override final;
+
     virtual std::string WezNazwePlikuFinal() const override final
     {
         return _BrylaGoraOstr.WezNazwePliku_BrylaFinalna();

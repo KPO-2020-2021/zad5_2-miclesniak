@@ -22,7 +22,7 @@ using namespace std;
  * \mainpage 
  * \author Michal Lesniak
  * \n Diagram klas:
- * \image html Diagram1.png 
+ * \image html Diagram5_2.png 
  * 
  * 
  */

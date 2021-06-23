@@ -4,6 +4,11 @@
 #include "Wektor3D.hh"
 #include "BrylaGeometryczna.hh"
 #include <string>
+/**
+ * @file przeszkoda.hh
+ * @brief Klasa przeszkody 
+ * 
+ */
 class przeszkoda 
 {
 private:

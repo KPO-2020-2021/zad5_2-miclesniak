@@ -4,7 +4,11 @@
 #include "BrylaGeometryczna.hh"
 #include "przeszkoda.hh"
 #include "prostopadloscian.hh"
-
+/**
+ * @file plaskowyz.hh
+ * @brief Plik zawiera definicję klasy plaskowyz dziedziczacej po klasie przeszkoda
+ * 
+ */
 class Plaskowyz : public przeszkoda
 {
     prostopadloscian _Plaskowyz;
